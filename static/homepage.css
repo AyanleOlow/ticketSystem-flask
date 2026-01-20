@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: rgb(31, 31, 34);
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    border: solid white 2px;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    display: flex;
+    color: aqua;
+    transform: scale(1.2);
+}

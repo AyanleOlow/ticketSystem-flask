@@ -1,0 +1,50 @@
+body{
+    width: 99vw;
+    height: auto;
+    background-color: rgb(31, 31, 34);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(13%);
+
+}
+
+.navbar{
+    display: flex;
+    border: solid black 2px;
+    width: 10px;
+}
+
+.authBox {
+    display: flex;
+    border: solid rgb(84, 84, 84) 2px;
+    min-width: 450px;
+    min-height: 500px;
+    text-align: center;
+}
+
+.authTop{
+    display: flex;
+    flex-direction: row;
+    transform: translateX(140%);
+    width: 10vw;
+    height: 6vh;
+    size: 40px;
+    
+}
+
+button{
+    display: flex;
+    background-color: rgb(31, 31, 34);
+    color: white;
+
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
