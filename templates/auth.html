@@ -36,4 +36,53 @@
 
 <script>
 
+const buttons = document.querySelectorAll(".authTop button");
+
+const authDivs = document.querySelector(".auth");
+
+
+const loginHTML = `
+  <label>email</label>
+  <input type="email" id="email">
+
+  <label>passord</label>
+  <input type="password" id="password">
+  
+   <button> login </button>
+
+`;
+
+const signupHTML = `
+  <label>fornavn</label>
+  <input type="text" id="firstname">
+
+  <label>etternavn</label>
+  <input type="text" id="lastname">
+
+  <label>email</label>
+  <input type="email" id="email">
+
+  <label>passord</label>
+  <input type="password" id="password">
+
+  <button> register </button>
+
+
+`;
+
+function showLogin() {
+  authDivs.innerHTML = loginHTML;
+}
+
+function showSignup() {
+  authDivs.innerHTML = signupHTML;
+}
+
+// button order: [0]=login [1]=signup
+buttons[0].addEventListener("click", showLogin);
+buttons[1].addEventListener("click", showSignup);
+
+// Default view
+showLogin();
+
 </script>
