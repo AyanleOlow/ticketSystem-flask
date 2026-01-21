@@ -1,50 +1,85 @@
-body{
-    width: 99vw;
-    height: auto;
+body {
+    margin: 0;
+    min-height: 100vh;
     background-color: rgb(31, 31, 34);
     color: white;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    transform: translateY(13%);
-
+    justify-content: center;   
+    align-items: center;       
 }
 
-.navbar{
+
+.navbar {
+    width: 100%;
+    height: 8vh;
     display: flex;
-    border: solid black 2px;
-    width: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .authBox {
-    display: flex;
     border: solid rgb(84, 84, 84) 2px;
-    min-width: 450px;
+    width: 450px;
     min-height: 500px;
-    text-align: center;
-}
-
-.authTop{
-    display: flex;
-    flex-direction: row;
-    transform: translateX(140%);
-    width: 10vw;
-    height: 6vh;
-    size: 40px;
     
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+
+    border-radius: 12px;
 }
 
-button{
+.authTop {
     display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.authTop button {
     background-color: rgb(31, 31, 34);
     color: white;
-
+    border: solid rgb(84, 84, 84) 2px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.auth{
+
+
+.auth {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 35px;
+    gap: 18px;
+    width: 100%;
 }
 
+
+.auth input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid rgb(84, 84, 84) 2px;
+    background: rgb(31, 31, 34);
+    color: white;
+    outline: none;
+}
+
+
+
+.auth button {
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(90, 209, 209);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth button:hover {
+    transform: scale(1.02);
+}
