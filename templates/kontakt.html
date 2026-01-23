@@ -19,27 +19,24 @@
 
     <section class="kontakt">
         <h1 class="tittle">kontakt oss om Problemet ditt</h1>
-        <form action="">
+        <form method="POST" action="/kontakt">
+  <label>Emne</label>
+  <input class="emne" type="text" name="emne" required>
 
-            <label for="">Emne</label>
-            <input class="emne" type="text">
+  <label>katogory</label>
+  <select class="katogory" name="category" required>
+    <option value="">velg</option>
+    <option value="nettsiden">nettsiden</option>
+    <option value="konto">konto</option>
+    <option value="rapporter">rapporter</option>
+  </select>
 
-            <label for="">katogory</label>
-            <select id="katogory" class="katogory">
-      <option value="velg">velg</option>
-      <option value="nettsiden">nettsiden</option>
-      <option value="konto">konto</option>
-      <option value="rapporter">rapporter</option>
-    </select>
+  <label>beskrive</label>
+  <textarea class="beskrive" name="beskrivelse" required></textarea>
 
-    <label for="">beskrive</label>
-    <textarea class="beskrive" name="beskrive" id="">
-        
-    </textarea>
+  <button type="submit">send</button>
+</form>
 
-    <button>send</button>
-    
-   </form>
     </section>
 
     <section>

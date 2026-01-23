@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hjem</title>
-    <link rel="stylesheet" href="../static/homepage.css">
+    <title>dashboard</title>
 </head>
 <body>
+    
     <section class="navbar">
         
         <a href="./homepage.html" target="_blank"><h2>hjem</h2></a>
@@ -25,11 +25,6 @@
       <a href="./auth.html"><h2>login/signup</h2></a>
   {% endif %}
 </section>
-{% if session.get("user_name") %}
-  <h1 class="welcome">Welcome, {{ session.get("user_name") }} 👋</h1>
-{% else %}
-  <h1>Welcome to TechSupport AS </h1>
-{% endif %}
 
 </body>
 </html>

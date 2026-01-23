@@ -22,8 +22,3 @@ a:hover{
     color: aqua;
     transform: scale(1.2);
 }
-
-.welcome{
-    display: flex;
-    justify-content: center;
-}
